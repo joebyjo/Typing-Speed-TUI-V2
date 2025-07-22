@@ -1,31 +1,121 @@
-# Typing-Speed-TUI
+# Typing-Speed-TUI-V2
 
-A simple typing speed test program that uses python and MySQL. It has a user-wise
-data recording and the ability to view previous sessions and best runs and times. It even has a leaderboard
-feature to view the player with best stats
+A fast and minimal **Typing Speed Test** program with a **Text User Interface (TUI)**, built using **Python** and **MySQL**.  
+Version 2.0 improves usability, security, and uses MySQL to store data
+
+---
+
+## 🚀 Features
+
+- Console-based, fast and responsive
+- No GUI overhead — perfect for low-resource systems
+- Menu-driven navigation
+- User login with authentication
+- Secure password storage via hashing
+- View previous typing test results
+- Tracks statistics like Net WPM, Gross WPM, Accuracy, Errors, and Time Taken
+- Leaderboard to compare scores across users
+- Anti-cheat checks (zero-width character detection)
+- MySQL-backed user and result storage
+- Easy/Hard difficulty word modes
 
 
-## Features
+---
 
-- Uses the console
-- Menu Driven
-- Fast as no GUI is used
-- Capability to store and view previous runs
-- User-wise records
-- Leaderboard
-- Ability to view data in the form of a clean and readable table
-- Uses MySQL and databases
+## 📁 Project Structure
 
-## How to use:
-clone the repo into a directory
-
-In the terminal use the following command
-```bash
-$ python3 main.py 
 ```
-Enter username and begin playing by typing in any of the following 
-- `p`
-- `1`
-- `play`
+.
+├── config.py                  # Database credentials
+├── DatabaseManagement.py     # Handles all MySQL interaction
+├── main.py                   # Entry point & main loop
+├── TypingSpeed.py            # Core logic for typing test
+├── Utils.py                  # Helper functions and utilities
+├── typingspeed.sql           # MySQL schema
+├── word_list_easy.txt
+├── word_list_hard.txt
+└── README.md
+```
+---
 
-the words will show and you can start typing after a 1-second delay
+
+## 🛠 How to Use
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/joebyjo/Typing-Speed-TUI-V2.git
+cd Typing-Speed-TUI-V2
+````
+
+2. **Set up your virtual environment (optional but recommended):**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. **Install required dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+* Update the `config.py` file with your database credentials
+
+4. **Run the app:**
+
+```bash
+python3 main.py
+```
+
+5. **Controls:**
+
+* Enter your username and password (or register a new user)
+* From the menu, select:
+
+  * `1`, `p`, or `play` — Start typing test
+  * `2`, `view records` — View your previous runs
+  * `3`, `leaderboard` — View all-time leaderboard
+  * `4`, `logout` — Switch user
+  * `99`, `exit` — Exit the program
+
+---
+
+## 📸 Screenshots
+
+### Login Screen
+
+![Registration Screen](images/output1.png)
+
+### Welcome Screen
+
+![Welcome Screen](images/output2.png)
+
+### Typing Speed
+
+![Game Screen](images/output3.png)
+
+
+### Stats Summary
+
+![Stats Screen](images/output4.png)
+
+### Leaderboard View
+
+![Leaderboard](images/output5.png)
+
+
+## ⚠️ Note
+
+- **Font Appearance**: The appearance may differ slightly based on the **font** you use in your terminal.
+- For optimal viewing, use a **monospaced font** (e.g., Consolas, Courier New).
+
+---
+
+## 💡 Tip
+
+This project is completely terminal-based and perfect for practicing backend + database Python development without GUI distractions.
+
+---
+
