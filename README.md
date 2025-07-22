@@ -5,6 +5,16 @@ Version 2.0 improves usability, security, and uses MySQL to store data
 
 ---
 
+## 📚 Table of Contents
+
+- [🚀 Features](#-features)
+- [🧰 Project Structure](#-project-structure)
+- [🛠 How to Use](#-how-to-use)
+- [📸 Screenshots](#-screenshots)
+- [💬 Feedback and Contributions](#-feedback-and-contributions)
+
+---
+
 ## 🚀 Features
 
 - Console-based, fast and responsive
@@ -22,7 +32,7 @@ Version 2.0 improves usability, security, and uses MySQL to store data
 
 ---
 
-## 📁 Project Structure
+## 🧰 Project Structure
 
 ```
 .
@@ -116,6 +126,17 @@ python3 main.py
 ## 💡 Tip
 
 This project is completely terminal-based and perfect for practicing backend + database Python development without GUI distractions.
+
+---
+
+## 💬 Feedback and Contributions
+
+I welcome feedback and contributions! Feel free to submit an issue or a pull request. Here’s how you can contribute:
+
+1. **Fork** the repository.
+2. Create a **new branch** for your feature or bugfix.
+3. **Commit** your changes and **push** them to your fork.
+4. **Submit a pull request** with a description of your changes.
 
 ---
 
